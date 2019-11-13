@@ -1,12 +1,9 @@
-// Require the built in 'assertion' library
-var assert = require('assert');
-// Create a group of tests about Arrays
-describe('Array', function() {
-  // Within our Array group, Create a group of tests for indexOf
-  describe('#indexOf()', function() {
-    // A string explanation of what we're testing
+var assert = require('assert'); // Require the built in 'assertion' library
+
+describe('Array', function() { // test group 'Array'
+
+    describe('#indexOf()', function() { // nested test group '#indexOf()' 
     it('should return -1 when the value is not present', function(){
-      // Our actual test: -1 should equal indexOf(...)
       assert.equal(-1, [1,2,3].indexOf(4));
     });
   });
